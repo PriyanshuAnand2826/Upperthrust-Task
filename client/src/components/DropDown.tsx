@@ -44,18 +44,18 @@ const DropDown: React.FC<DropDownProps> = ({
 
 
   return(
-    <div>
+    <div className="p-3">
       <p  className="text-center mt-4 font-bold text-2xl" style={{fontFamily:'DM Sans'}}>Upperthrust Dropdown with multi selection</p>
       
      
-      <div className="flex justify-center item-center">
+      <div className="flex justify-center item-center relative">
      <Select>
      <SelectTrigger className="mt-3 flex block w-80% p-2 border border-gray-300 rounded-md text-center" >
         <SelectValue className="w-100%" placeholder={selectedOptions.length > 0
           ? selectedOptions.join(', ')
           : placeholder} /> <FaAngleDown className="mt-2 ms-2" />
       </SelectTrigger>
-      <SelectContent className="z-10 w-[100%] bg-white border border-gray-300 rounded-md mt-14 shadow-lg  ">
+      <SelectContent className=" z-10 w-[100%] bg-white border border-gray-300 rounded-md mt-14 shadow-lg  ">
       <div className="flex items-center p-2 cursor-pointer">
             <input
               type="checkbox"
